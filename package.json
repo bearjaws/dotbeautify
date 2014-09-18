@@ -1,0 +1,35 @@
+{
+    "name": "dotbeautify",
+    "version": "0.0.1",
+    "description": "Runs jsbeautify against given directories",
+    "main": "index.js",
+    "directories": {
+        "lib": ".",
+        "test": "./test/"
+    },
+    "dependencies": {
+        "fs-extra": "0.10.0",
+        "lodash": "2.4.1",
+        "js-beautify": "1.5.1"
+    },
+    "devDependencies": {
+        "mocha":""
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/"
+    },
+    "scripts": {
+        "test": "mocha test/"
+    },
+    "keywords": [
+        "jsbeautify",
+        "auto jsbeautify",
+        "grunt jsbeautify"
+    ],
+    "author": "Michael Barajas <mbarajas@dotdecimal.com>",
+    "license": "MIT License",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
