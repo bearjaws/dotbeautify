@@ -1,6 +1,6 @@
 {
     "name": "dotbeautify",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Runs jsbeautify against given directories",
     "main": "index.js",
     "directories": {
@@ -31,5 +31,6 @@
     "license": "MIT License",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
-    }
+    },
+    "readme":"USEAGE: var dotBeautify = require('dotbeautify'); dotBeautify.beautify(['./lib/']); All source code will be automatically beautified by js-beautify Also allows you to pass in second {options} object as defined by https://github.com/beautify-web/js-beautify#options dotbeautify, uses js-beautify on given directories to automatically formatcode USEAGE: var dotBeautify = require('dotbeautify'); dotBeautify.beautify(['./lib/']); All source code will be automatically beautified by js-beautify Also allows you to pass in second {options} object as defined by https://github.com/beautify-web/js-beautify#options"
 }
