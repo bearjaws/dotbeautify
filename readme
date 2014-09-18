@@ -9,13 +9,3 @@ All source code will be automatically beautified by js-beautify
 
 Also allows you to pass in second {options} object as defined by
 https://github.com/beautify-web/js-beautify#options
-
-dotbeautify, uses js-beautify on given directories to automatically formatcode USEAGE:
-var dotBeautify = require('dotbeautify');
-
-dotBeautify.beautify(['./lib/']);
-
-All source code will be automatically beautified by js-beautify
-
-Also allows you to pass in second {options} object as defined by
-https://github.com/beautify-web/js-beautify#options
