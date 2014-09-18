@@ -1,6 +1,6 @@
 {
     "name": "dotbeautify",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Runs jsbeautify against given directories",
     "main": "index.js",
     "directories": {
@@ -19,9 +19,6 @@
         "type": "git",
         "url": "https://github.com/bearjaws/dotbeautify"
     },
-    "scripts": {
-        "test": "mocha test/"
-    },
     "keywords": [
         "jsbeautify",
         "auto jsbeautify",
@@ -30,7 +27,7 @@
     "author": "Michael Barajas <mbarajas@dotdecimal.com>",
     "license": "MIT License",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha test/"
     },
     "readme": "USEAGE: var dotBeautify = require('dotbeautify'); dotBeautify.beautify(['./lib/']); All source code will be automatically beautified by js-beautify Also allows you to pass in second {options} object as defined by https://github.com/beautify-web/js-beautify#options"
 }
