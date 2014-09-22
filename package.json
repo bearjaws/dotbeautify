@@ -1,6 +1,6 @@
 {
     "name": "dotbeautify",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "Runs jsbeautify against given directories",
     "main": "index.js",
     "directories": {

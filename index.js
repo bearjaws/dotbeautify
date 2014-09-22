@@ -34,7 +34,10 @@ module.exports = {
         var files = getFiles(directories);
         _(files).forEach(function(file) {
             var fileText = fs.readFileSync(file, 'utf8');
-            fs.writeFileSync(file, beautify(fileText, config));
+            var beautified = beautify(fileText, config);
+            if(fileText.length != beautified.length) {
+                fs.writeFileSync(file, beautified);
+            }
         });
     }
 }
