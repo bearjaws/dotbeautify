@@ -1,6 +1,6 @@
 {
     "name": "dotbeautify",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "description": "Runs jsbeautify against given directories",
     "main": "index.js",
     "directories": {
@@ -29,5 +29,5 @@
     "scripts": {
         "test": "mocha test/"
     },
-    "readme": "USEAGE: var dotBeautify = require('dotbeautify'); dotBeautify.beautify(['./lib/']); All source code will be automatically beautified by js-beautify Also allows you to pass in second {options} object as defined by https://github.com/beautify-web/js-beautify#options"
+    "readme": "dotbeautify, uses js-beautify on given directories to automatically formatcode USEAGE: var dotBeautify = require('dotbeautify'); dotBeautify.beautify(['./lib/']); If you want to use it as a pre commit hook and block any unbeautified code, simply add it to your git pre commit hook with the --pre-commit switch, this will throw an exception which will block the commit. All source code will be automatically beautified by js-beautify Also allows you to pass in second {options} object as defined by https://github.com/beautify-web/js-beautify#options"
 }
