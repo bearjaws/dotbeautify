@@ -35,7 +35,11 @@ module.exports = {
         _(files).forEach(function(file) {
             var fileText = fs.readFileSync(file, 'utf8');
             var beautified = beautify(fileText, config);
+
             if(fileText.length != beautified.length) {
+                if (process.argv[3] === "--pre-commit") {
+                  throw new Error("Code requires beautification.")
+                }
                 fs.writeFileSync(file, beautified);
             }
         });

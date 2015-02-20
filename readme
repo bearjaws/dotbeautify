@@ -5,6 +5,10 @@ var dotBeautify = require('dotbeautify');
 
 dotBeautify.beautify(['./lib/']);
 
+If you want to use it as a pre commit hook and block any unbeautified code,
+simply add it to your git pre commit hook with the --pre-commit switch, this
+will throw an exception which will block the commit.
+
 All source code will be automatically beautified by js-beautify
 
 Also allows you to pass in second {options} object as defined by
